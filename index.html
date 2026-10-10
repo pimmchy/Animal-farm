@@ -20,17 +20,20 @@
 
 <body>
 
-    <!-- แถบนำทาง Header (Page & Moon พร้อมพื้นที่โลโก้) -->
+    <!-- แถบนำทาง Header -->
     <header>
         <div class="w bar">
             <a class="logo-brand" href="#top">
                 <div class="brand-logo-frame">
-                    <img src="images/logo.png" alt="Page & Moon Logo"
+                    <!-- เปลี่ยนชื่อไฟล์รูปภาพตรงนี้เป็น images/pig.png -->
+                    <img src="images/pig.png" alt="Page & Moon Logo"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
                     <span class="logo-placeholder" style="display:none;">📖</span>
                 </div>
                 <span class="brand-text">Page & Moon</span>
             </a>
+
+            <!-- ...ส่วนเมนูนำทางที่เหลือ... -->
 
             <nav id="menu" aria-label="เมนูหลัก">
                 <ul class="nav-links">
@@ -170,18 +173,21 @@
                         <h3 class="book-sub-heading">เมื่อฟาร์มของสัตว์ กลายเป็นภาพสะท้อนของอำนาจและสังคมมนุษย์</h3>
 
                         <p class="book-lead-text">
-                            <em>Animal Farm</em> ผลงานคลาสสิกของ <strong>จอร์จ ออร์เวลล์ (George Orwell)</strong>
-                            ตีพิมพ์ครั้งแรกในปี 1945 เล่าเรื่องของเหล่าสัตว์ในฟาร์มที่ลุกขึ้นต่อต้านมนุษย์เจ้าของฟาร์ม
-                            เพราะหวังสร้างสังคมใหม่ที่ทุกชีวิตมีอิสระและเท่าเทียมกัน
+                            ถ้าวันหนึ่งสัตว์ในฟาร์มโค่นเจ้าของลงได้ แล้วสร้างสังคมที่ "ทุกตัวเท่าเทียมกัน"
+                            ขึ้นมาเอง เรื่องจะจบสวยอย่างที่หวังไหม?
                         </p>
                         <p class="book-lead-text">
-                            แต่เมื่อเวลาผ่านไป อุดมการณ์ที่สวยงามกลับค่อย ๆ เปลี่ยนแปลง เมื่อผู้ที่ได้อำนาจเริ่มสร้างกฎ
-                            ตีความความจริง และกำหนดว่าใครควรเชื่ออะไร
+                            <strong><em>Animal Farm</em></strong> ของ จอร์จ ออร์เวลล์ (George Orwell)
+                            ตีพิมพ์ครั้งแรกในปี 1945
+                            เล่าเรื่องการลุกขึ้นสู้ของเหล่าสัตว์ แต่เมื่อเวลาผ่านไป ผู้ถืออำนาจก็เริ่มเขียนกฎใหม่
+                            ตีความความจริงตามใจ และกำหนดว่าใครควรเชื่ออะไร
+
+
                         </p>
                         <p class="book-lead-text">
-                            แม้จะเป็นเรื่องราวของสัตว์ในฟาร์ม แต่หนังสือเล่มนี้กำลังชวนเรามองกลับมายัง <strong>อำนาจ
-                                การเมือง ความเท่าเทียม และธรรมชาติของมนุษย์</strong> ผ่านเรื่องเล่าที่อ่านง่าย กระชับ
-                            และยังร่วมสมัยแม้เวลาจะผ่านมากว่า 80 ปี
+                            นิทานเล่มบางที่อ่านง่าย แต่พูดถึง <strong>อำนาจ การเมือง
+                                และธรรมชาติของมนุษย์</strong>ได้เฉียบคม และ 80
+                            ปีผ่านไป ก็ยังร่วมสมัยอย่างน่าตกใจ
                         </p>
 
                         <div class="author-snippet">
@@ -206,13 +212,15 @@
                                 <b class="d-title">ปีที่ตีพิมพ์ครั้งแรก</b>
                                 <p class="d-desc">เรื่องราวสะท้อนประวัติศาสตร์ที่ยังคมชัดและร่วมสมัยจนถึงปัจจุบัน</p>
                             </div>
-                            <div class="decision-card">
-                                <span class="d-highlight">อ่านไม่ยาว</span>
-                                <b class="d-title">เรื่องกระชับ จบไว</b>
-                                <p class="d-desc">เหมาะทั้งสำหรับผู้เริ่มอ่านวรรณกรรมและผู้ที่สนใจประเด็นสังคม</p>
+                            <div class="reading-decision-card">
+                                <div class="decision-card">
+                                    <span class="d-reading">อ่านไม่ยาว</span>
+                                    <b class="d-title">เรื่องกระชับ จบไว</b>
+                                    <p class="d-desc">เหมาะทั้งสำหรับผู้เริ่มอ่านวรรณกรรมและผู้ที่สนใจประเด็นสังคม</p>
+                                </div>
                             </div>
                             <div class="decision-card">
-                                <span class="d-highlight">คลาสสิก</span>
+                                <span class="d-reading">คลาสสิก</span>
                                 <b class="d-title">วรรณกรรมทรงคุณค่า</b>
                                 <p class="d-desc">หนังสือที่ได้รับการอ่านและพูดถึงอย่างต่อเนื่องทั่วโลก</p>
                             </div>
@@ -227,9 +235,8 @@
             <div class="w">
                 <div class="sec-head text-center">
                     <span class="cine-pill">THE 5 STAGES OF CORRUPTION</span>
-                    <h2 class="rv">5 กลยุทธ์กลืนอำนาจ: จากความหวังสู่เผด็จการ</h2>
-                    <p class="rv mu" style="--d:.1s">💡 ชี้เมาส์ที่แต่ละขั้นตอน (หรือแตะบนมือถือ/แท็บเล็ต)
-                        เพื่อคลี่อ่านเนื้อหาและวาทกรรมกล่อมประสาท</p>
+                    <h2 class="rv">5 ขั้นที่ทำให้ความหวังกลายเป็นเผด็จการ</h2>
+
                 </div>
 
                 <div class="stages-container">
@@ -245,17 +252,17 @@
                         </div>
                         <div class="stage-info">
                             <div class="stage-header">
-                                <h3>1. จุดไฟปฏิวัติด้วยอุดมคติสวยหรู</h3>
+                                <h3>1. เริ่มด้วยอุดมคติสวยหรู</h3>
                                 <span class="stage-hint-icon">▾</span>
                             </div>
                             <div class="stage-expand-content">
-                                <p>เหล่าสัตว์ร่วมใจกันขับไล่นายโจนส์ เจ้าของฟาร์มขี้เมา ทุกตัวเชื่อมั่นในความเสมอภาค
-                                    และตั้งกฎเหล็ก 7 ข้อไว้บนผนังโรงนาเพื่อเป็นหลักประกันว่าจะไม่มีสัตว์ตัวใดกดขี่กันเอง
+                                <p>สัตว์ทั้งฟาร์มร่วมใจไล่นายโจนส์ เจ้าของฟาร์มขี้เมา แล้วเขียนกฎ 7 ข้อไว้บนผนังโรงนา
+                                    เพื่อสัญญาว่าจะไม่มีใครกดขี่กันอีก
                                 </p>
                                 <div class="stage-dialogue">
-                                    <span class="d-label">วาทกรรมกล่อมประสาท:</span>
-                                    <span class="d-text">“สองขาคือศัตรู สี่ขาหรือมีปีกคือมิตร
-                                        สัตว์ทุกตัวเท่าเทียมกัน!”</span>
+                                    <span class="d-label">คำพูดที่ใช้กล่อม:</span>
+                                    <span class="d-text">"สองขาคือศัตรู สี่ขาหรือมีปีกคือมิตร
+                                        สัตว์ทุกตัวเท่าเทียมกัน!"</span>
                                 </div>
                             </div>
                         </div>
@@ -273,15 +280,14 @@
                         </div>
                         <div class="stage-info">
                             <div class="stage-header">
-                                <h3>2. อ้างความฉลาด เพื่อสร้างอภิสิทธิ์แรก</h3>
+                                <h3>2. อ้างว่า "ฉลาดกว่า" เพื่อสร้างอภิสิทธิ์แรก</h3>
                                 <span class="stage-hint-icon">▾</span>
                             </div>
                             <div class="stage-expand-content">
-                                <p>นมสดและผลแอปเปิลเริ่มถูกแอบเก็บไว้ให้พวกหมูกินเพียงกลุ่มเดียว
-                                    โดยโฆษกหมูอ้างว่าพวกตนต้องใช้สมองบริหารฟาร์มอย่างเหน็ดเหนื่อย หากขาดสารอาหาร
-                                    ฟาร์มจะล่มสลาย</p>
+                                <p>นมสดและแอปเปิลถูกแอบเก็บไว้ให้หมูกินกลุ่มเดียว โดยอ้างว่าต้องใช้สมองบริหารฟาร์ม
+                                    ถ้าขาดอาหาร ฟาร์มจะล่มสลาย</p>
                                 <div class="stage-dialogue">
-                                    <span class="d-label">วาทกรรมกล่อมประสาท:</span>
+                                    <span class="d-label">คำพูดที่ใช้กล่อม:</span>
                                     <span class="d-text">“พวกเราไม่ได้กินเพราะชอบ แต่กินเพื่อพวกเจ้า
                                         ไม่อย่างนั้นนายโจนส์จะกลับมานะ!”</span>
                                 </div>
@@ -301,15 +307,14 @@
                         </div>
                         <div class="stage-info">
                             <div class="stage-header">
-                                <h3>3. เลี้ยงกองกำลังส่วนตัว & กำจัดคนเห็นต่าง</h3>
+                                <h3>3. ใช้กำลังกำจัดคนเห็นต่าง</h3>
                                 <span class="stage-hint-icon">▾</span>
                             </div>
                             <div class="stage-expand-content">
-                                <p>นโปเลียนปล่อยฝูงหมาล่าเนื้อที่แอบชุบเลี้ยงไว้ เข้าไล่ล่าสโนว์บอล (หมูนักวางแผน)
-                                    จนเตลิดหนีไป แล้วยกเลิกการประชุมออกเสียง
-                                    จากนั้นตั้งตนเป็นผู้นำเบ็ดเสร็จไร้การตรวจสอบ</p>
+                                <p>นโปเลียนปล่อยฝูงหมาที่แอบเลี้ยงไว้ไล่สโนว์บอล หมูนักวางแผน ออกจากฟาร์ม
+                                    ยกเลิกการประชุมโหวต แล้วตั้งตนเป็นผู้นำเบ็ดเสร็จที่ไม่มีใครตรวจสอบได้</p>
                                 <div class="stage-dialogue">
-                                    <span class="d-label">วาทกรรมกล่อมประสาท:</span>
+                                    <span class="d-label">คำพูดที่ใช้กล่อม:</span>
                                     <span class="d-text">“การโหวตลงคะแนนมีแต่จะสร้างความแตกแยก
                                         เชื่อมั่นในการนำของท่านนโปเลียนเถิด”</span>
                                 </div>
@@ -329,15 +334,15 @@
                         </div>
                         <div class="stage-info">
                             <div class="stage-header">
-                                <h3>4. แอบแก้กฎหมายย้อนหลัง & สั่งประหารกลางลาน</h3>
+                                <h3>4. แอบแก้กฎ แล้วทำให้ทุกคนสงสัยความจำตัวเอง</h3>
                                 <span class="stage-hint-icon">▾</span>
                             </div>
                             <div class="stage-expand-content">
-                                <p>หมูเริ่มย้ายเข้าไปนอนบนเตียง ดื่มเหล้า และลงโทษสัตว์อื่นจนถึงแก่ความตาย เมื่อมีคนท้วง
-                                    กฎเดิมบนผนังจะถูกแอบทาสีเติมคำใหม่ ใครจำความเดิมได้จะถูกกล่าวหาว่า “จำผิดและเป็นกบฏ”
+                                <p>หมูย้ายไปนอนบนเตียง ดื่มเหล้า และลงโทษสัตว์อื่นจนตาย เมื่อมีคนท้วง
+                                    กฎบนผนังก็ถูกแอบเติมคำใหม่ ใครจำฉบับเดิมได้จะถูกหาว่า "จำผิดและเป็นกบฏ"
                                 </p>
                                 <div class="stage-dialogue">
-                                    <span class="d-label">วาทกรรมกล่อมประสาท:</span>
+                                    <span class="d-label">คำพูดที่ใช้กล่อม:</span>
                                     <span class="d-text">“กฎบอกว่าห้ามนอนบนเตียงที่มีผ้าปูต่างหาก
                                         เจ้าความจำเสื่อมไปเองหรือเปล่า?”</span>
                                 </div>
@@ -357,12 +362,12 @@
                         </div>
                         <div class="stage-info">
                             <div class="stage-header">
-                                <h3>5. กลายร่างเป็นปีศาจที่ตนเคยลุกขึ้นสู้</h3>
+                                <h3>5. กลายเป็นสิ่งที่เคยลุกขึ้นสู้</h3>
                                 <span class="stage-hint-icon">▾</span>
                             </div>
                             <div class="stage-expand-content">
-                                <p>หมูเริ่มหัดเดินสองขา สวมเสื้อผ้า และถือแส้คุมแรงงาน ม้าผู้ซื่อสัตย์ถูกส่งขายโรงเชือด
-                                    ในฉากจบหมูนั่งชนแก้วกับมนุษย์ จนสัตว์อื่นมองทะลุหน้าต่างแล้วแยกไม่ออกว่าใครคือคน
+                                <p>หมูหัดเดินสองขา สวมเสื้อผ้า ถือแส้คุมแรงงาน ม้าผู้ซื่อสัตย์ถูกส่งไปโรงเชือด
+                                    ฉากจบคือหมูนั่งชนแก้วกับมนุษย์ จนสัตว์อื่นที่แอบมองผ่านหน้าต่างแยกไม่ออกว่าใครคือคน
                                     ใครคือหมู</p>
                                 <div class="stage-dialogue fatal">
                                     <span class="d-label">กฎข้อสุดท้ายบนผนัง:</span>
@@ -382,8 +387,7 @@
                 <div class="sec-head text-center">
                     <span class="cine-pill">THE CAST & ALLEGORY</span>
                     <h2 class="rv">ตัวละครสำคัญ: กระจกสะท้อนมนุษย์ในสังคม</h2>
-                    <p class="rv mu" style="--d:.1s">💡 ชี้เมาส์ที่รูปตัวละครด้านบนเพื่อสลับดูรายละเอียดในหน้าต่าง
-                        Spotlight</p>
+
                 </div>
 
                 <div class="spotlight-wrapper rv">
@@ -409,9 +413,8 @@
             <div class="w">
                 <div class="sec-head text-center">
                     <span class="cine-pill">WHY READ ANIMAL FARM TODAY</span>
-                    <h2 class="rv">3 ประเด็นที่ทำให้ Animal Farm ยังน่าอ่านในวันนี้</h2>
-                    <p class="rv mu" style="--d:.1s">เรื่องราวที่ทำให้เรากลับมาตั้งคำถามกับอำนาจ ความจริง
-                        และความเท่าเทียม</p>
+                    <h2 class="rv">3 เหตุผลที่ Animal Farm ยังน่าอ่านในวันนี้</h2>
+                    <p class="rv mu" style="--d:.1s">หนังสือที่ชวนเราตั้งคำถามกับอำนาจ ความจริง และความเท่าเทียม</p>
                 </div>
 
                 <div class="takeaways-grid">
@@ -425,11 +428,12 @@
                                 <line x1="8" y1="23" x2="16" y2="23" />
                             </svg>
                         </div>
-                        <h3>1. เมื่อผู้มีอำนาจเป็นคนกำหนดความหมายของคำ</h3>
+                        <h3>1. ใครกำหนดความหมายของคำ คนนั้นกำหนดความจริงได้</h3>
                         <p>
-                            คำที่ดูธรรมดาอย่าง “ความเท่าเทียม” หรือ “ความยุติธรรม” อาจเปลี่ยนความหมายได้
-                            หากผู้มีอำนาจเป็นฝ่ายกำหนดว่าอะไรคือความจริง <em>Animal Farm</em> ทำให้เราเห็นว่า
-                            ภาษาไม่ได้มีไว้เพียงสื่อสาร แต่ยังสามารถใช้โน้มน้าวและควบคุมความคิดของผู้คนได้ด้วย
+                            คำธรรมดาอย่าง "ความเท่าเทียม" หรือ "ความยุติธรรม" เปลี่ยนความหมายได้ทันที
+                            ถ้าผู้มีอำนาจเป็นคนบอกว่าอะไรคือความจริง <em>Animal Farm</em>
+                            ทำให้เห็นว่าภาษาไม่ได้มีไว้แค่สื่อสาร
+                            แต่ใช้โน้มน้าวและควบคุมความคิดคนได้ด้วย
                         </p>
                     </div>
 
@@ -442,11 +446,10 @@
                                 <line x1="12" y1="16" x2="12.01" y2="16" />
                             </svg>
                         </div>
-                        <h3>2. ความภักดีโดยไม่ตั้งคำถาม อาจทำให้เรากลายเป็นผู้ถูกใช้</h3>
+                        <h3>2. ภักดีโดยไม่ถาม อาจกลายเป็นแค่เครื่องมือ</h3>
                         <p>
-                            ตัวละครบางตัวเชื่อมั่น ทำงานหนัก และยอมเสียสละเพื่อส่วนรวม
-                            แต่ไม่เคยตั้งคำถามกับสิ่งที่ผู้นำบอก หนังสือจึงชวนผู้อ่านคิดว่า ความซื่อสัตย์เป็นสิ่งที่ดี
-                            แต่ควรเดินคู่กับการคิดและตรวจสอบเสมอ
+                            บางตัวละครเชื่อมั่น ทำงานหนัก และยอมเสียสละเพื่อส่วนรวม แต่ไม่เคยตั้งคำถามกับสิ่งที่ผู้นำพูด
+                            หนังสือเล่มนี้ชวนคิดว่า ความซื่อสัตย์เป็นสิ่งดี แต่ต้องเดินคู่กับการคิดและตรวจสอบเสมอ
                         </p>
                     </div>
 
@@ -457,12 +460,11 @@
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                             </svg>
                         </div>
-                        <h3>3. อำนาจที่ไม่มีใครตรวจสอบ อาจเปลี่ยนอุดมการณ์ได้</h3>
+                        <h3>3. อำนาจที่ไม่มีใครตรวจสอบ เปลี่ยนอุดมการณ์ได้</h3>
                         <p>
-                            การเปลี่ยนแปลงในฟาร์มเริ่มต้นจากความฝันเรื่องเสรีภาพและความเท่าเทียม
-                            แต่เมื่ออำนาจรวมอยู่ในมือของคนเพียงกลุ่มเดียว
-                            สิ่งที่เคยต่อสู้เพื่อเปลี่ยนแปลงก็อาจย้อนกลับมาในรูปแบบใหม่
-                            นี่คือหนึ่งในเหตุผลที่เรื่องราวจากปี 1945 ยังชวนให้คนอ่านตั้งคำถามกับสังคมในปัจจุบัน
+                            ฟาร์มเริ่มจากความฝันเรื่องเสรีภาพและความเท่าเทียม แต่เมื่ออำนาจไปรวมอยู่ในมือคนกลุ่มเดียว
+                            สิ่งที่เคยสู้เพื่อเปลี่ยนแปลงก็ย้อนกลับมาในรูปใหม่ นี่คือเหตุผลที่เรื่องจากปี 1945
+                            ยังทำให้เราตั้งคำถามกับสังคมทุกวันนี้
                         </p>
                     </div>
                 </div>
@@ -478,9 +480,9 @@
                     <h2 class="reader-match-title">Animal Farm เหมาะกับใคร?</h2>
 
                     <div class="reader-match-lead">
-                        <p>ไม่จำเป็นต้องรู้เรื่องการเมืองมาก่อน และไม่จำเป็นต้องเป็นคนที่อ่านวรรณกรรมเป็นประจำ</p>
-                        <p>เพราะ Animal Farm เล่าเรื่องซับซ้อนผ่านเหตุการณ์ในฟาร์มที่เข้าใจง่าย
-                            แต่เปิดพื้นที่ให้ผู้อ่านตีความได้มากกว่าที่เห็น</p>
+                        <p>ไม่ต้องรู้เรื่องการเมือง และไม่ต้องเป็นนักอ่านวรรณกรรมมาก่อนก็อ่านได้</p>
+                        <p>เพราะ <em>Animal Farm</em> เล่าเรื่องซับซ้อนผ่านเหตุการณ์ในฟาร์มที่เข้าใจง่าย
+                            แต่เปิดพื้นที่ให้ตีความได้ลึกกว่าที่เห็น</p>
                     </div>
 
                     <!-- 4 กลุ่มผู้อ่าน (Audience Match Cards) -->
@@ -488,26 +490,25 @@
                         <div class="reader-card">
                             <div class="reader-card-icon">📖</div>
                             <h3>อยากเริ่มอ่านวรรณกรรมคลาสสิก</h3>
-                            <p>เรื่องไม่ยาว โครงเรื่องเข้าใจง่าย และเข้าถึงได้แม้ไม่คุ้นเคยกับวรรณกรรม</p>
+                            <p>เล่มไม่หนา โครงเรื่องตามทัน เหมาะกับคนที่ยังไม่คุ้นกับวรรณกรรม</p>
                         </div>
 
                         <div class="reader-card">
                             <div class="reader-card-icon">💡</div>
                             <h3>ชอบหนังสือที่ชวนคิด</h3>
-                            <p>อ่านจบแล้วอาจทำให้ย้อนกลับมาคิดถึงคำว่า อำนาจ ความเท่าเทียม และความยุติธรรม</p>
+                            <p>อ่านจบแล้วอาจอดย้อนคิดเรื่องอำนาจ ความเท่าเทียม และความยุติธรรมไม่ได้</p>
                         </div>
 
                         <div class="reader-card">
                             <div class="reader-card-icon">🏛️</div>
                             <h3>สนใจสังคมและการเมือง</h3>
-                            <p>ได้เห็นประเด็นเรื่องผู้นำ การโฆษณาชวนเชื่อ และการใช้อำนาจ
-                                ผ่านเรื่องเล่าที่ไม่หนักจนเกินไป</p>
+                            <p>ได้เห็นเรื่องผู้นำ การโฆษณาชวนเชื่อ และการใช้อำนาจ ผ่านเรื่องเล่าที่ไม่หนักเกินไป</p>
                         </div>
 
                         <div class="reader-card">
                             <div class="reader-card-icon">⏳</div>
                             <h3>อยากอ่านหนังสือที่ยังร่วมสมัย</h3>
-                            <p>แม้ตีพิมพ์มาตั้งแต่ปี 1945 แต่หลายคำถามในเรื่องยังเชื่อมโยงกับสังคมปัจจุบันได้</p>
+                            <p>ตีพิมพ์ตั้งแต่ปี 1945 แต่คำถามในเรื่องยังใช้อธิบายสังคมทุกวันนี้ได้</p>
                         </div>
                     </div>
 
@@ -518,53 +519,73 @@
             </div>
         </section>
 
-        <!-- ส่วนที่ 6: ข้อมูลทางบรรณานุกรม (Section สลับสี: Warm) -->
+        <!-- ส่วนที่ 6: ข้อมูลทางบรรณานุกรม (จัดเลย์เอาต์ใหม่ ซ้าย-ขวา) -->
         <section id="bibliography" class="sec-warm bibliography-section">
             <div class="w">
                 <div class="sec-head text-center">
                     <span class="cine-pill">BIBLIOGRAPHIC RECORD</span>
                     <h2 class="rv">ข้อมูลทางบรรณานุกรม</h2>
-                    <p class="rv mu" style="--d:.1s">ข้อมูลการจัดพิมพ์ฉบับแปลภาษาไทยสำหรับการอ้างอิงและการศึกษา</p>
                 </div>
 
-                <div class="biblio-card rv">
-                    <div class="biblio-card-header">
-                        <span class="biblio-card-title">ข้อมูลบรรณานุกรมของหนังสือ (CIP Data)</span>
-                        <span class="biblio-lang-badge">ฉบับภาษาไทย</span>
+                <div class="biblio-grid-layout rv">
+                    <!-- ฝั่งซ้าย: รูปปกหนังสือเอียงธรรมชาติ + เงาฟุ้งแบบ 3D -->
+                    <div class="biblio-cover-col">
+                        <div class="biblio-book-stage">
+                            <div class="biblio-book-shadow"></div>
+                            <div class="biblio-book-frame">
+                                <img src="images/book-cover.png" alt="ปกหนังสือ Animal Farm ฉบับภาษาไทย"
+                                    class="biblio-book-img"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                                <div class="ph-box" style="display:none; height:360px;">
+                                    <span>🖼️ ปกหนังสือ<br><code>images/book-cover.png</code></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="biblio-table">
-                        <div class="biblio-row">
-                            <span class="biblio-label">ชื่อเรื่อง:</span>
-                            <span class="biblio-value"><strong>แอนิมอล ฟาร์ม : การเมืองเรื่องสรรพสัตว์</strong></span>
-                        </div>
-                        <div class="biblio-row">
-                            <span class="biblio-label">ชื่อเรื่องเดิม:</span>
-                            <span class="biblio-value"><em>Animal Farm: A Fairy Story</em></span>
-                        </div>
-                        <div class="biblio-row">
-                            <span class="biblio-label">ผู้เขียน:</span>
-                            <span class="biblio-value">จอร์จ ออร์เวลล์ (George Orwell)</span>
-                        </div>
-                        <div class="biblio-row">
-                            <span class="biblio-label">ผู้แปล:</span>
-                            <span class="biblio-value">สรวงอัปสร กสิกรานันท์</span>
-                        </div>
-                        <div class="biblio-row">
-                            <span class="biblio-label">การพิมพ์:</span>
-                            <span class="biblio-value">พิมพ์ พ.ศ. 2564</span>
-                        </div>
-                        <div class="biblio-row">
-                            <span class="biblio-label">สำนักพิมพ์:</span>
-                            <span class="biblio-value">สำนักพิมพ์แอร์โรว์ (Arrow Publishing)</span>
-                        </div>
-                        <div class="biblio-row">
-                            <span class="biblio-label">ขนาดรูปเล่ม:</span>
-                            <span class="biblio-value">184 หน้า</span>
-                        </div>
-                        <div class="biblio-row biblio-row-highlight">
-                            <span class="biblio-label">ISBN:</span>
-                            <span class="biblio-value biblio-isbn">978-434-238-5</span>
+                    <!-- ฝั่งขวา: การ์ดตารางข้อมูลบรรณานุกรม CIP -->
+                    <div class="biblio-card-col">
+                        <div class="biblio-card">
+                            <div class="biblio-card-header">
+                                <span class="biblio-card-title">ข้อมูลบรรณานุกรมของหนังสือ (CIP Data)</span>
+                                <span class="biblio-lang-badge">ฉบับภาษาไทย</span>
+                            </div>
+
+                            <div class="biblio-table">
+                                <div class="biblio-row">
+                                    <span class="biblio-label">ชื่อเรื่อง:</span>
+                                    <span class="biblio-value"><strong>แอนิมอล ฟาร์ม :
+                                            การเมืองเรื่องสรรพสัตว์</strong></span>
+                                </div>
+                                <div class="biblio-row">
+                                    <span class="biblio-label">ชื่อเรื่องเดิม:</span>
+                                    <span class="biblio-value"><em>Animal Farm: A Fairy Story</em></span>
+                                </div>
+                                <div class="biblio-row">
+                                    <span class="biblio-label">ผู้เขียน:</span>
+                                    <span class="biblio-value">จอร์จ ออร์เวลล์ (George Orwell)</span>
+                                </div>
+                                <div class="biblio-row">
+                                    <span class="biblio-label">ผู้แปล:</span>
+                                    <span class="biblio-value">สรวงอัปสร กสิกรานันท์</span>
+                                </div>
+                                <div class="biblio-row">
+                                    <span class="biblio-label">การพิมพ์:</span>
+                                    <span class="biblio-value">พิมพ์ พ.ศ. 2564</span>
+                                </div>
+                                <div class="biblio-row">
+                                    <span class="biblio-label">สำนักพิมพ์:</span>
+                                    <span class="biblio-value">สำนักพิมพ์แอร์โรว์ (Arrow Publishing)</span>
+                                </div>
+                                <div class="biblio-row">
+                                    <span class="biblio-label">ขนาดรูปเล่ม:</span>
+                                    <span class="biblio-value">184 หน้า</span>
+                                </div>
+                                <div class="biblio-row biblio-row-highlight">
+                                    <span class="biblio-label">ISBN:</span>
+                                    <span class="biblio-value biblio-isbn">978-434-238-5</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -605,24 +626,90 @@
 
                 <ul class="credit-list">
                     <li class="credit-item">
-                        <b>1. ภาพวาดจิตรกรรม Hero Section & Chapter I:</b>
-                        <p>จิตรกรรมทิวทัศน์ฟาร์มสัตว์และนโปเลียน ผลงานภาพประกอบนวนิยาย <em>Animal Farm</em> โดยศิลปิน
-                            Ralph Steadman (50th Anniversary Edition)</p>
+                        <b>1. รูปของ Benjamin:</b>
+                        <p>Baamboozle. (ม.ป.ป.). <em>Animal farm characters</em>. <a
+                                href="https://www.baamboozle.com/study/137781"
+                                target="_blank">https://www.baamboozle.com/study/137781</a>
+                        </p>
                     </li>
                     <li class="credit-item">
-                        <b>2. ภาพปกหนังสือฉบับภาษาไทย:</b>
-                        <p>หนังสือ <em>แอนิมอล ฟาร์ม : การเมืองเรื่องสรรพสัตว์</em> ฉบับแปลโดย สรวงอัปสร กสิกรานันท์
-                            สำนักพิมพ์แอร์โรว์ (Arrow Publishing, พ.ศ. 2564)</p>
+                        <b>2. รูปใน Stage 3:</b>
+                        <p>Fandom. (ม.ป.ป.). Dogs <em>(Animal Farm)/Gallery</em>. Villains Wiki.
+                            <a href="https://villains.fandom.com/wiki/Dogs_(Animal_Farm)/Gallery"
+                                target="_blank">https://villains.fandom.com/wiki/Dogs_(Animal_Farm)/Gallery</a>
+                        </p>
                     </li>
                     <li class="credit-item">
-                        <b>3. ภาพถ่าย George Orwell:</b>
-                        <p>ภาพถ่ายบุคคลของ Eric Arthur Blair (George Orwell, ค.ศ. 1903–1950) เผยแพร่ในสาธารณสมบัติ
-                            (Public Domain / National Portrait Gallery)</p>
+                        <b>3. รูปของ Napoleon:</b>
+                        <p>Animal Farm characters. (ม.ป.ป.). <em>Animal Farm</em>.
+                            <a href="https://www.animal.farm/category/animal-farm-characters/"
+                                target="_blank">https://www.animal.farm/category/animal-farm-characters/</a>
+                        </p>
                     </li>
                     <li class="credit-item">
-                        <b>4. ภาพชุด 5 กลยุทธ์ และตัวละครในฟาร์ม:</b>
-                        <p>ภาพสตูดิโอและภาพประกอบคลาสสิกจากภาพยนตร์แอนิเมชันและงานศิลป์ดัดแปลง <em>Animal Farm</em>
-                            (ค.ศ. 1954 / ค.ศ. 1999)</p>
+                        <b>4. รูปของ Snowball:</b>
+                        <p>Fandom. (ม.ป.ป.). <em>Snowball</em>. Animal Farm Wiki.
+                            <a href="https://animalfarm.fandom.com/wiki/Snowball"
+                                target="_blank">https://animalfarm.fandom.com/wiki/Snowball</a>
+                        </p>
+                    </li>
+                    <li class="credit-item">
+                        <b>5. รูปของ Boxer:</b>
+                        <p>Pinterest. (ม.ป.ป.). <em>Boxer (Animal Farm) [ภาพ]</em>.
+                            <a href="https://es.pinterest.com/pin/761671355748353366/"
+                                target="_blank">https://es.pinterest.com/pin/761671355748353366/</a>
+                        </p>
+                    </li>
+                    <li class="credit-item">
+                        <b>6. รูปใน Stage 4:</b>
+                        <p>Common Sense Media. (ม.ป.ป.). <em>Animal farm movie review</em>.
+                            <a href="https://www.commonsensemedia.org/movie-reviews/animal-farm"
+                                target="_blank">https://www.commonsensemedia.org/movie-reviews/animal-farm</a>
+                        </p>
+                    </li>
+                    <li class="credit-item">
+                        <b>7. รูปของ Old Major:</b>
+                        <p>IMDb. (ม.ป.ป.). <em>Animal Farm (1954) [ภาพ]</em>.
+                            <a href="https://www.imdb.com/title/tt0047834/mediaviewer/rm3176167168/"
+                                target="_blank">https://www.imdb.com/title/tt0047834/mediaviewer/rm3176167168/</a>
+                        </p>
+                    </li>
+                    <li class="credit-item">
+                        <b>8. รูปภาพ George Orwell:</b>
+                        <p>IMDb. (ม.ป.ป.). <em>George Orwell [ภาพบุคคล]</em>.
+                            <a href="https://www.imdb.com/name/nm0000567/"
+                                target="_blank">https://www.imdb.com/name/nm0000567/</a>
+                        </p>
+                    </li>
+                    <li class="credit-item">
+                        <b>9. รูป Stage 1:</b>
+                        <p>Henderson, R. (2014, 19 พฤศจิกายน). <em>Animal Farm remastered – A review</em>. Show Me The
+                            Animation.
+                            <a href="https://showmetheanimation.com/features/animal-farm-remastered-a-review/"
+                                target="_blank">https://showmetheanimation.com/features/animal-farm-remastered-a-review/</a>
+                        </p>
+                    </li>
+                    <li class="credit-item">
+                        <b>10. รูปของ Squealer:</b>
+                        <p>BBC Bitesize. (ม.ป.ป.). <em>Animal Farm: Squealer</em>. <a
+                                href="https://www.bbc.co.uk/bitesize/guides/zcb8p39/revision/7"
+                                target="_blank">https://www.bbc.co.uk/bitesize/guides/zcb8p39/revision/7</a>
+                        </p>
+                    </li>
+                    <li class="credit-item">
+                        <b>11. รูป Stage 2:</b>
+                        <p>BBC Bitesize. (ม.ป.ป.). <em>Animal Farm</em>. <a
+                                href="https://www.bbc.co.uk/bitesize/guides/zccjfrd/revision/4"
+                                target="_blank">https://www.bbc.co.uk/bitesize/guides/zccjfrd/revision/4</a>
+                        </p>
+                    </li>
+                    <li class="credit-item">
+                        <b>12. รูป Final:</b>
+                        <p>Moyers, B. (ม.ป.ป.). <em>Not all men are pigs, but the ones who are, are swine</em>.
+                            BillMoyers.com.
+                            <a href="https://billmoyers.com/story/not-all-men-are-pigs-but-the-ones-who-are-are-swine/"
+                                target="_blank">https://billmoyers.com/story/not-all-men-are-pigs-but-the-ones-who-are-are-swine/</a>
+                        </p>
                     </li>
                 </ul>
             </div>
