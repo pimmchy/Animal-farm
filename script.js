@@ -285,3 +285,25 @@ window.addEventListener("keydown", (e) => {
         closeModal();
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+    accordionHeaders.forEach((header) => {
+        header.addEventListener("click", () => {
+            const currentItem = header.parentElement;
+            const isOpen = currentItem.classList.contains("active");
+
+            // ปิดข้ออื่นทั้งหมดก่อน (หากต้องการให้เปิดได้ทีละข้อเดียว)
+            document.querySelectorAll(".accordion-item").forEach((item) => {
+                item.classList.remove("active");
+                item.querySelector(".accordion-header").setAttribute("aria-expanded", "false");
+            });
+
+            // ถ้าข้อที่คลิกยังไม่เปิด ให้เปิดข้อนั้น
+            if (!isOpen) {
+                currentItem.classList.add("active");
+                header.setAttribute("aria-expanded", "true");
+            }
+        });
+    });
+});
